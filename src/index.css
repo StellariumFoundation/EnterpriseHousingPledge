@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Neue Frutiger World";
+  src: url("/assets/neue_frutiger_world_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Neue Frutiger World", sans-serif;
+  --font-display: "Neue Frutiger World", sans-serif;
+  --font-space: "Neue Frutiger World", sans-serif;
+  --font-mono: "Neue Frutiger World", sans-serif;
+}

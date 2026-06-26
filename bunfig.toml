@@ -1,0 +1,5 @@
+# Bun Configuration for EHP Enterprise
+# Registers the official bun-plugin-svelte for HMR during development.
+
+[serve.static]
+plugins = ["bun-plugin-svelte"]

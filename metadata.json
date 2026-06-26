@@ -1,0 +1,6 @@
+{
+  "name": "Enterprise Pledge Management",
+  "description": "A collaborative platform for managing public-private affordable housing pledges, collateralized assets, pre-fabricated construction projects, and unit allocations under the Enterprise Housing Pledge (EHP) framework.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

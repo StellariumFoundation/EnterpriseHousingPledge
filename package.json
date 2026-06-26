@@ -1,0 +1,32 @@
+{
+  "name": "ehp-enterprise",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:css": "bunx @tailwindcss/cli -i ./src/index.css -o ./dist/assets/styles.css --watch",
+    "dev:js": "bun run build.ts --watch",
+    "dev:server": "bun --watch server.ts",
+    "dev": "echo 'Watch mode: bun run dev:css & bun run dev:js & bun run dev:server'",
+    "dev:hmr": "echo 'HMR for Svelte only. Keep bun run dev:css + bun run dev:server running in other terminals. API runs on :3000.' && bun serve --port 5173",
+    "build": "bun run build.ts",
+    "start": "NODE_ENV=production bun run server.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.10.0",
+    "@libsql/client": "^0.17.4",
+    "@tailwindcss/cli": "^4.3.1",
+    "dotenv": "^17.4.2",
+    "hono": "^4.12.27",
+    "lucide-svelte": "^1.0.1",
+    "svelte": "^5.56.4",
+    "tailwindcss": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "@types/node": "^26.0.1",
+    "bun-plugin-svelte": "^0.0.6",
+    "typescript": "^6.0.3"
+  }
+}
